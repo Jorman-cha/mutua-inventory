@@ -1,25 +1,29 @@
 # 📦 mutua-inventory
 
-> Sistema web de inventario y gestión de mantenimiento de equipos para la Fundación Mutua.
+> Sistema web de inventario y gestión de activos (equipos y muebles) con alertas de mantenimiento para la Fundación Mutua.
 
 ---
 
 ## 📋 Descripción
 
-**mutua-inventory** es una aplicación web desarrollada como proyecto de prácticas laborales para la **Fundación Mutua**, una organización con más de 40 años de trayectoria en Bogotá, Colombia.
+**mutua-inventory** es una aplicación web desarrollada como proyecto de prácticas laborales para la **Fundación Mutua**, una organización con más de 40 años de trayectoria en Bogotá, Colombia, ubicada en el barrio Patio Bonito, localidad de Kennedy.
 
-El sistema permite registrar y hacer seguimiento de todos los equipos de la fundación (computadores, impresoras, neveras, aires acondicionados, entre otros), y genera alertas automáticas cuando un equipo requiere mantenimiento preventivo o correctivo, indicando qué tipo de mantenimiento se debe realizar.
+El sistema permite registrar y hacer seguimiento de todos los activos de la fundación — equipos (computadores, impresoras, neveras, aires acondicionados, entre otros) y mobiliario — a través de la hoja de vida de cada activo. Genera alertas automáticas cuando un activo requiere mantenimiento preventivo o correctivo, indicando qué tipo de mantenimiento se debe realizar, y produce reportes para apoyar la toma de decisiones administrativas.
+
+🌐 Sitio web de la fundación: [fundacionpt.org](https://fundacionpt.org)
 
 ---
 
 ## ✨ Funcionalidades
 
-- 📋 **Registro de equipos** — nombre, tipo, marca, modelo, número de serie, ubicación y estado
-- 🔔 **Alertas de mantenimiento** — notificación en pantalla cuando un equipo tiene mantenimiento próximo o vencido
-- 🛠️ **Historial de mantenimientos** — registro de cada intervención realizada con fecha, descripción y técnico responsable
-- 📍 **Gestión por sede** — filtrado y visualización de equipos por sede o área
+- 📋 **Registro de activos** — equipos y muebles con nombre, tipo, marca, modelo, número de serie, ubicación y estado
+- 📄 **Hoja de vida por activo** — historial completo de cada equipo o mueble desde su adquisición
+- 🔔 **Alertas de mantenimiento** — notificación en pantalla cuando un activo tiene mantenimiento próximo o vencido
+- 🛠️ **Historial de mantenimientos** — registro de cada intervención con fecha, descripción y técnico responsable
+- 📍 **Gestión por sede** — filtrado y visualización de activos por sede o área
 - 👥 **Control de usuarios** — roles diferenciados (administrador, técnico, consulta)
-- 📊 **Reportes** — exportación de listados de equipos y mantenimientos en PDF o Excel
+- 📊 **Reportes** — exportación de listados de activos y mantenimientos en PDF o Excel
+- 📘 **Manual de uso** — documentación técnica y guía para el equipo administrativo
 
 ---
 
@@ -42,23 +46,23 @@ mutua-inventory/
 ├── login.php               # Inicio de sesión
 ├── logout.php              # Cierre de sesión
 │
-├── equipos/
-│   ├── lista.php           # Listado de todos los equipos
-│   ├── agregar.php         # Formulario para registrar equipo
-│   ├── editar.php          # Editar información de un equipo
-│   └── detalle.php         # Vista detalle de un equipo
+├── activos/
+│   ├── lista.php           # Listado de todos los activos
+│   ├── agregar.php         # Formulario para registrar activo
+│   ├── editar.php          # Editar información de un activo
+│   └── detalle.php         # Vista detalle / hoja de vida del activo
 │
 ├── mantenimientos/
 │   ├── lista.php           # Historial de mantenimientos
 │   ├── agregar.php         # Registrar nuevo mantenimiento
-│   └── alertas.php         # Equipos con mantenimiento pendiente
+│   └── alertas.php         # Activos con mantenimiento pendiente
 │
 ├── usuarios/
 │   ├── lista.php           # Gestión de usuarios
 │   └── agregar.php         # Crear usuario
 │
 ├── reportes/
-│   ├── equipos.php         # Reporte de inventario
+│   ├── activos.php         # Reporte de inventario
 │   └── mantenimientos.php  # Reporte de mantenimientos
 │
 ├── assets/
@@ -76,6 +80,9 @@ mutua-inventory/
 │   ├── header.php
 │   ├── footer.php
 │   └── funciones.php
+│
+├── docs/
+│   └── manual_de_uso.pdf   # Manual para el equipo administrativo
 │
 └── database/
     └── mutua_inventory.sql # Script de creación de la base de datos
@@ -135,10 +142,10 @@ mutua-inventory/
 
 | Vista | Descripción |
 |---|---|
-| Dashboard | Panel principal con resumen de equipos y alertas activas |
-| Lista de equipos | Tabla con todos los equipos registrados y su estado |
-| Alertas | Equipos con mantenimiento próximo o vencido |
-| Detalle de equipo | Información completa e historial de mantenimientos |
+| Dashboard | Panel principal con resumen de activos y alertas activas |
+| Lista de activos | Tabla con todos los equipos y muebles registrados |
+| Hoja de vida | Historial completo de un activo desde su adquisición |
+| Alertas | Activos con mantenimiento próximo o vencido |
 
 ---
 
@@ -148,20 +155,28 @@ mutua-inventory/
 [🔄] En desarrollo — Fase: levantamiento de requerimientos
 ```
 
-- [x] Levantamiento de información con la fundación
+- [x] Diagnóstico inicial y levantamiento de requerimientos
+- [ ] Diseño de la arquitectura del aplicativo
 - [ ] Diseño de base de datos
 - [ ] Maquetado de interfaces
-- [ ] Desarrollo del backend
-- [ ] Pruebas
+- [ ] Desarrollo de módulos principales (inventario, hojas de vida, alertas, reportes)
+- [ ] Pruebas y ajustes con retroalimentación del equipo administrativo
 - [ ] Despliegue en hosting
+- [ ] Capacitación al equipo administrativo
+- [ ] Entrega de manual de uso y documentación técnica
 
 ---
 
-## 👤 Autor
+## 👥 Información del proyecto
 
-**Nicolay** — Estudiante de Tecnología en Informática, quinto semestre  
-UNIMINUTO — Corporación Universitaria Minuto de Dios  
-Prácticas laborales — Fundación Mutua, Bogotá, Colombia
+| | |
+|---|---|
+| **Autor** | Nicolay — Estudiante de Tecnología en Informática, quinto semestre |
+| **Universidad** | UNIMINUTO — Corporación Universitaria Minuto de Dios |
+| **Entidad** | Fundación Mutua — Patio Bonito, Kennedy, Bogotá |
+| **Acompañante práctica** | Yamile Torres (Administradora de empresas) |
+| **Supervisor** | Gabriel Umaña (Comunicador social) |
+| **Año** | 2026 |
 
 ---
 
