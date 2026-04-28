@@ -20,7 +20,6 @@ El sistema permite registrar y realizar seguimiento de todos los activos de la f
 - 📄 **Hoja de vida por activo** — historial completo de cada equipo o mueble desde su adquisición
 - 🔔 **Alertas de mantenimiento** — notificación en pantalla cuando un activo tiene mantenimiento próximo o vencido
 - 🛠️ **Historial de mantenimientos** — registro de cada intervención con fecha, descripción y técnico responsable
-- 📍 **Gestión por sede** — filtrado y visualización de activos por sede o área
 - 👥 **Control de usuarios** — roles diferenciados (administrador, técnico, consulta)
 - 📊 **Reportes** — exportación de listados de activos y mantenimientos en PDF o Excel
 - 📘 **Manual de uso** — documentación técnica y guía para el equipo administrativo
