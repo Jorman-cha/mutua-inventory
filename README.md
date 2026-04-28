@@ -8,7 +8,7 @@
 
 **mutua-inventory** es una aplicación web desarrollada como proyecto de prácticas laborales para la **Fundación Mutua**, una organización con más de 40 años de trayectoria en Bogotá, Colombia, ubicada en el barrio Patio Bonito, localidad de Kennedy.
 
-El sistema permite registrar y hacer seguimiento de todos los activos de la fundación — equipos (computadores, impresoras, neveras, aires acondicionados, entre otros) y mobiliario — a través de la hoja de vida de cada activo. Genera alertas automáticas cuando un activo requiere mantenimiento preventivo o correctivo, indicando qué tipo de mantenimiento se debe realizar, y produce reportes para apoyar la toma de decisiones administrativas.
+El sistema permite registrar y realizar seguimiento de todos los activos de la fundación — equipos (computadores, impresoras, neveras, aires acondicionados, entre otros) y mobiliario — a través de la hoja de vida de cada activo. Genera alertas automáticas cuando un activo requiere mantenimiento preventivo o correctivo, indicando qué tipo de mantenimiento se debe realizar, y produce reportes para apoyar la toma de decisiones administrativas.
 
 🌐 Sitio web de la fundación: [fundacionpt.org](https://fundacionpt.org)
 
