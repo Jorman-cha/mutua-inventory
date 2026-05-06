@@ -45,7 +45,7 @@ El sistema centraliza el registro de todos los activos de la fundación — equi
 | **Reportes PDF** | TCPDF / mPDF | Generación de reportes sin dependencias externas de servidor |
 | **Reportes Excel** | PhpSpreadsheet | Exportación de datos a formato .xlsx |
 | **Servidor local** | XAMPP | Entorno de desarrollo (Apache + MySQL + PHP) |
-| **Servidor producción** | Hosting compartido cPanel | Despliegue final en el servidor de la fundación |
+| **Servidor producción** | Hosting compartido cPanel o local | Despliegue final en el servidor de la fundación o de forma local |
 
 ---
 
