@@ -119,7 +119,7 @@ mutua-inventory/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/mutua-inventory.git
+git clone https://github.com/x/mutua-inventory.git
 cd mutua-inventory
 ```
 
